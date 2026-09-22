@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <title>Zebra Club — Carta Digital</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0a0a0a;
@@ -285,61 +283,6 @@
     box-shadow:0 4px 18px rgba(0,0,0,.5);
     max-width:100%;
   }
-
-  /* ===== BRESH weekend theme (Carta Club) ===== */
-  #page-club.bresh{
-    --bresh-pink:#ff2e88;
-    --bresh-pink-dark:#c2185b;
-    --bresh-bg1:#ffd9ea;
-    --bresh-bg2:#ffb8d9;
-    background:
-      radial-gradient(circle at 15% 10%, rgba(255,255,255,.5), transparent 40%),
-      radial-gradient(circle at 85% 90%, rgba(255,255,255,.35), transparent 45%),
-      linear-gradient(160deg, var(--bresh-bg1), var(--bresh-bg2));
-    border-radius:18px;
-    padding:22px 16px 30px;
-    margin-top:-4px;
-    color:#3a0a20;
-  }
-  #page-club.bresh .bresh-header{
-    text-align:center;
-    margin-bottom:18px;
-  }
-  #page-club.bresh .bresh-logo{
-    font-family:'Pacifico', cursive;
-    font-size:40px;
-    color:#fff;
-    text-shadow:0 2px 0 var(--bresh-pink-dark), 0 4px 10px rgba(194,24,91,.4);
-    line-height:1;
-  }
-  #page-club.bresh .bresh-flowers{
-    font-size:18px;
-    margin-top:6px;
-    opacity:.85;
-  }
-  #page-club.bresh .subtabs button{
-    border-color:rgba(194,24,91,.35);
-    color:var(--bresh-pink-dark);
-    background:rgba(255,255,255,.5);
-  }
-  #page-club.bresh .subtabs button.active{
-    background:var(--bresh-pink);
-    color:#fff;
-    border-color:var(--bresh-pink);
-  }
-  #page-club.bresh h2.cat{
-    color:#3a0a20;
-    border-bottom:2px solid var(--bresh-pink);
-  }
-  #page-club.bresh .item{border-bottom:1px dashed rgba(194,24,91,.25);}
-  #page-club.bresh .item .name{color:#3a0a20;}
-  #page-club.bresh .item .name .tag{border-color:var(--bresh-pink-dark);color:var(--bresh-pink-dark);}
-  #page-club.bresh .pricelist .prices span{
-    background:#fff;
-    border-color:rgba(194,24,91,.3);
-    color:var(--bresh-pink-dark);
-  }
-  #page-club.bresh .price-legend{color:var(--bresh-pink-dark);opacity:.75;}
 </style>
 </head>
 <body>
@@ -351,7 +294,7 @@
 
 <nav class="tabs">
   <button class="active" data-page="bar">Carta Bar</button>
-  <button data-page="club">🌸 BRESH</button>
+  <button data-page="club">Carta Club</button>
   <button data-page="allinclusive">All Inclusive</button>
 </nav>
 
@@ -522,17 +465,12 @@
   </section></section>
 
   <!-- ================= CLUB ================= -->
-  <section class="page bresh" id="page-club">
-
-    <div class="bresh-header">
-      <div class="bresh-logo">BRESH</div>
-      <div class="bresh-flowers">🌸　🌸　🌸</div>
-    </div>
+  <section class="page" id="page-club">
 
     <div class="subtabs">
       <button class="active" data-group="club-general">General</button>
-      <button data-group="club-espumantes">Espumantes</button>
-      <button data-group="club-bottle">Botellas</button>
+      <button data-group="club-espumantes">Espumantes / Vino</button>
+      <button data-group="club-bottle">Bottle Service</button>
     </div>
 
     <div class="group active pricelist" id="club-general">
@@ -541,28 +479,32 @@
       <h2 class="cat">Sin alcohol</h2>
       <div class="item"><div class="row"><div class="name">Agua Mineral</div><div class="prices"><span>$5.000</span><span>$5.500</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Gaseosa Lata</div><div class="prices"><span>$5.000</span><span>$5.500</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Speed</div><div class="prices"><span>$6.000</span><span>$7.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Speed</div><div class="prices"><span>$6.000</span><span>$7.500</span></div></div></div>
 
-      <h2 class="cat">Cerveza</h2>
-      <div class="item"><div class="row"><div class="name">Brahma</div><div class="prices"><span>$8.000</span><span>$10.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Corona</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
+      <h2 class="cat">Cervezas</h2>
+      <div class="item"><div class="row"><div class="name">Stella Artois 330cc</div><div class="prices"><span>$8.000</span><span>$10.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Stella Artois Pure Gold 330cc</div><div class="prices"><span>$7.000</span><span>$8.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Stella Artois Sin Alcohol 330cc</div><div class="prices"><span>$6.000</span><span>$7.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Bucket Stella (6 unid. 330cc)</div><div class="prices"><span>$35.000</span><span>$40.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Corona 330cc</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Bucket Corona (6 unid. 330cc)</div><div class="prices"><span>$45.000</span><span>$50.000</span></div></div></div>
 
-      <h2 class="cat">Clásicos</h2>
-      <div class="item"><div class="row"><div class="name">Smirnoff Regular c/Speed</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Smirnoff Saborizado c/Speed</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Smirnoff Ice Late</div><div class="prices"><span>$8.000</span><span>$10.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Gin Gordon's</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">JW Red Label</div><div class="prices"><span>$15.000</span><span>$17.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">JW Black Label</div><div class="prices"><span>$18.000</span><span>$20.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Fernet Branca</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
+      <h2 class="cat">Tragos</h2>
+      <div class="item"><div class="row"><div class="name">Fernet Branca</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Branca Menta</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Carpano Rosso</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Sernova c/Speed</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Absolut c/Speed</div><div class="prices"><span>$18.000</span><span>$20.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Gin Heraclito</div><div class="prices"><span>$10.000</span><span>$12.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Gin Beefeater</div><div class="prices"><span>$15.000</span><span>$17.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Ron Havana Esp.</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Campari</div><div class="prices"><span>$13.000</span><span>$15.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Hodlmoser c/Speed</div><div class="prices"><span>$15.000</span><span>$17.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Jägermeister c/Speed</div><div class="prices"><span>$18.000</span><span>$20.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Jameson</div><div class="prices"><span>$15.000</span><span>$17.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Jim Beam</div><div class="prices"><span>$18.000</span><span>$20.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">JW Red Label</div><div class="prices"><span>$15.000</span><span>$17.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">JW Black Label</div><div class="prices"><span>$18.000</span><span>$20.000</span></div></div></div>
 
       <h2 class="cat">Shots</h2>
       <div class="item"><div class="row"><div class="name">Shot Tequila</div><div class="prices"><span>$9.000</span><span>$10.000</span></div></div></div>
@@ -582,22 +524,28 @@
       <div class="item"><div class="row"><div class="name">Baron B Rosé</div><div class="prices"><span>$95.000</span><span>$105.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Veuve Clicquot</div><div class="prices"><span>$400.000</span><span>$445.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Dom Pérignon</div><div class="prices"><span>Consultar</span><span>Consultar</span></div></div></div>
+
+      <h2 class="cat">Vino</h2>
+      <div class="item"><div class="row"><div class="name">Tinto o Blanco de la Casa</div><div class="prices"><span>$35.000</span><span>$40.000</span></div></div></div>
     </div>
 
     <div class="group pricelist" id="club-bottle">
+      <div class="note">Bottle service — incluye 4 Speed, 4 gaseosas o 1 jugo.</div>
       <div class="price-legend"><span>Efectivo</span><span>Electr.</span></div>
 
-      <div class="item"><div class="row"><div class="name">Smirnoff Regular</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Smirnoff Saborizado</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">JW Red Label</div><div class="prices"><span>$125.000</span><span>$140.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">JW Black Label</div><div class="prices"><span>$135.000</span><span>$150.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Gin Gordon's</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Fernet Branca</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Fernet Branca</div><div class="prices"><span>$90.000</span><span>$100.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Ron Havana Esp.</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Sernova</div><div class="prices"><span>$90.000</span><span>$100.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Absolut</div><div class="prices"><span>$120.000</span><span>$130.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Ciroc</div><div class="prices"><span>$250.000</span><span>$280.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Gin Heraclito</div><div class="prices"><span>$100.000</span><span>$110.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Gin Beefeater</div><div class="prices"><span>$125.000</span><span>$140.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Hodlmoser</div><div class="prices"><span>$125.000</span><span>$140.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Jägermeister</div><div class="prices"><span>$135.000</span><span>$150.000</span></div></div></div>
       <div class="item"><div class="row"><div class="name">Jameson</div><div class="prices"><span>$125.000</span><span>$140.000</span></div></div></div>
-      <div class="item"><div class="row"><div class="name">Jack Daniel's</div><div class="prices"><span>$150.000</span><span>$165.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">JW Red Label</div><div class="prices"><span>$125.000</span><span>$140.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">JW Black Label</div><div class="prices"><span>$135.000</span><span>$150.000</span></div></div></div>
+      <div class="item"><div class="row"><div class="name">Jack Daniel</div><div class="prices"><span>$150.000</span><span>$165.000</span></div></div></div>
     </div>
 
   </section>
